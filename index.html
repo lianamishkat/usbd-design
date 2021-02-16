@@ -5,16 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">
-            <img src="assets/logo.png" alt="">
+        <div class="navbar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <div class="nav-btn-container">
+                <p class="menu">menu</p>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
         </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            Menu<span class="hamburger"></span>
-        </button>
         <nav class="nav">
             <ul class="nav-list">
                 <li><a href="#home">home</a></li>
@@ -27,8 +37,8 @@
 
     <section class="home" id="home">
         <div>
-            <p class="title">expand your business outside u.s. border</p>
-            <p>We are international business consulting experts helping companies conduct business in the U.S. and Bangladesh.</p>
+            <p class="title white-title">expand your business outside u.s. border</p>
+            <p class="home-desc">We are international business consulting experts helping companies conduct business in the U.S. and Bangladesh.</p>
             <button class="home-btn"> <a href="#work-with-us">get in touch</a></button>
         </div>
         <div class="home-img">
@@ -50,18 +60,18 @@
             <div class="card">
                 <img class="services-logo" src="assets/lightbulb-icon.svg" alt="">
                 <p class="subtitle">business consulting</p>
-                <p>Assisting clients with strategic planning, business development, and customer relationship management is our specialty.</p>
+                <p class="service-desc">Assisting clients with strategic planning, business development, and customer relationship management is our specialty.</p>
             </div>
             <div class="card">
                 <img class="services-logo" src="assets/target-icon.svg" alt="">
                 <p class="subtitle">project management</p>
-                <p>We provide expert guidance with project planning, on-the-ground strategy execution, and managing outsourced projects.
+                <p class="service-desc">We provide expert guidance with project planning, on-the-ground strategy execution, and managing outsourced projects.
                 </p>
             </div>
             <div class="card">
                 <img class="services-logo" src="assets/globe-icon.svg" alt="">
                 <p class="subtitle">international trading</p>
-                <p>USBD Market Access facilitates importing and exporting, as well as acting as the buying agent.</p>
+                <pnclass="service-desc">USBD Market Access facilitates importing and exporting, as well as acting as the buying agent.</p>
             </div>
         </div>
     </section>

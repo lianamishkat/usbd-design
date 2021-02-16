@@ -1,0 +1,170 @@
+:root{
+    --blue: #4167C9;
+    --blush: #D43747;
+    --dark-gray: #101010;
+    --light-gray:#E4ECFF;
+    --red: #AA1323;
+    --almost-white: #FDFDFD;
+}
+
+body{
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1rem;
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* !!!!!!!!!!!!!!!!!!
+-----TYPOGRAPHY-----
+!!!!!!!!!!!!!!!!!!!!! */
+
+.title, 
+.subtitle,
+.menu{
+    font-family: 'Spartan', sans-serif;
+    text-transform: uppercase;
+    color: var(--blue);
+    font-weight: 700;
+}
+.menu{
+    font-size: .75rem;
+}
+.title{
+    font-size: 1.5 rem;
+}
+.subtitle{
+    font-size: 1.25rem;
+}
+.white-title, 
+.subtitle{
+    color: var(--almost-white);
+}
+.service-desc{
+    color: var(--almost-white);
+}
+.nav-list{
+    list-style: none;
+    padding: 0;
+}
+
+/* BUTTONS AND LINKS */
+button:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none; 
+    font-size: .875rem; 
+    text-transform: uppercase;
+    font-family: 'spartan';
+    font-weight: 700;
+}
+li a {
+    font-size: .75rem;
+    color: var(--blue);
+}
+li a:hover{
+    color: var(--blush);
+}
+.home-btn a{
+    color: var(--almost-white);
+}
+.home-btn, 
+.wwu-btn{
+    color: var(--almost-white);
+    background: var(--blush);
+    border: none; 
+    text-transform: uppercase;
+    font-family: 'Spartan';
+    font-weight: 700;
+}
+.home-btn{
+    width: 12.5em;
+    height: 2.5em;
+}
+
+.home-btn:hover,
+.wwu-btn:hover{
+    background: var(--red);
+    cursor: pointer;
+}
+
+/* !!!!!!!!!!!!!!!!!!
+-------LAYOUT-------
+!!!!!!!!!!!!!!!!!!!!! */
+
+header{
+    padding:0;
+    margin:0;
+}
+.navbar{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.25em 2.75em ;
+    display: flex;
+    justify-content: space-between;
+    background: var(--almost-white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0 ;
+}
+.nav-btn-container{
+    display: flex;
+}
+ .nav{
+    text-align: left;
+    position: fixed;
+    
+    top: 15%;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    z-index: 100; 
+
+    transform: translateY(0%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+.nav-toggle{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 3em;
+    z-index: 1000;
+}
+.hamburger{
+    display: block;
+    position: relative;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    background: var(--blue);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger::before { top: 6px;}
+.hamburger::after {bottom: 6px;}
+
