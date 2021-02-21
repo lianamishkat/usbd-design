@@ -68,6 +68,8 @@ a{
 li a {
     font-size: .75rem;
     color: var(--blue);
+    padding: 1.5em .75em;
+    margin: 1em .5em;
 }
 li a:hover{
     color: var(--blush);
@@ -88,7 +90,7 @@ li a:hover{
 }
 .home-btn{
     width: 12.5em;
-    height: 2.5em;
+    padding: 1em .75em .75em;
 }
 .wwu-btn, input, textarea{
     width: 18.75em;
@@ -96,9 +98,10 @@ li a:hover{
 }
 
 .home-btn:hover,
-.wwu-btn:hover{
+.home-btn:focus,
+.wwu-btn:hover,
+.wwu-btn:focus{
     background: var(--red);
-    cursor: pointer;
 }
 
 input, textarea{
@@ -131,85 +134,38 @@ input:focus, textarea:focus{
     width: 7em;
 }
 header{
+    background: white;
     margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     padding: 1em .5em .25em;
-    border: seagreen 2px solid;
-}
-.nav-list{
-    display: none;
-}
-/* 
-.navbar{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1.25em 2.75em ;
-    display: flex;
-    justify-content: space-between;
-    background: var(--almost-white);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right:0 ;
+    background: 2px solid violet;
 }
 .nav-btn-container{
     display: flex;
 }
  .nav{
     text-align: left;
-    position: fixed;
-    
-    top: 15%;
-    bottom: 0;
-    left: 10%;
-    right: 0;
-    z-index: 100; 
-
-    transform: translateY(0%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    display: none;
+}
+.show-nav{
+    display: inline;
 }
 .nav-toggle{
     background: transparent;
-    border: 0;
-    cursor: pointer;
-    position: absolute;
-    right: 1em;
-    top: 3em;
-    z-index: 1000;
+    border: none;
+    margin: -.7em .25em 0 ;
 }
-.hamburger{
-    display: block;
-    position: relative;
-}
-
-.hamburger:focus{
+.nav-toggle:focus{
     outline: none;
+    background: none;
 }
-
-.hamburger,
-.hamburger::before,
-.hamburger::after{
-    background: var(--blue);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
-    cursor: pointer;
-}
-
-.hamburger::before,
-.hamburger::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-.hamburger::before { top: 6px;}
-.hamburger::after {bottom: 6px;} */
 
 section{
     margin: 1em 1.25em;
@@ -218,7 +174,7 @@ section{
 .home{
     background: var(--blue);
     max-width: 820px;
-    padding: 6.5em 1.25em;
+    padding: 10em 1.25em 6.5em;
     margin: 0 auto;
     text-align: left;
 }
@@ -272,25 +228,3 @@ section{
     padding: 1em;
 }
 
-
-/* *{
-    animation: fadeIn 1s;
-}
-p{
-    animation: slideIn 5s;
-}
-@keyframes fadeIn{
-    from{opacity: 0%;}
-    to{opacity: 100%;}
-}
-
-@keyframes slideIn{
-    from{
-        margin-right: 100%;
-        width: 300%;
-    }
-    to{
-        margin-right: 0%;
-        width: 100%;
-    }
-} */
