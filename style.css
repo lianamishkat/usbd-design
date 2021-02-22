@@ -239,8 +239,7 @@ section{
         width: 9em;
     }
     header{
-        padding: 1em 1.5em;
-        border: salmon 2px solid;
+        padding: 1em 1.5em .75em;
     }
     .home-text-container{
         padding: 7em 5em;
