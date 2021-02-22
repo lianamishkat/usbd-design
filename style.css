@@ -89,8 +89,7 @@ li a:hover{
     font-weight: 700;
 }
 .home-btn{
-    width: 12.5em;
-    padding: 1em .75em .75em;
+    padding: 1em  1.75em ;
 }
 .wwu-btn, input, textarea{
     width: 18.75em;
@@ -145,7 +144,6 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 1em .5em .25em;
-    background: 2px solid violet;
 }
 .nav-btn-container{
     display: flex;
@@ -173,7 +171,6 @@ section{
 }
 .home{
     background: var(--blue);
-    max-width: 820px;
     padding: 10em 1.25em 6.5em;
     margin: 0 auto;
     text-align: left;
@@ -196,6 +193,9 @@ section{
     left: 25%;
     width:50%;
     height: 1px;
+}
+.services{
+    padding-top: .75em;
 }
 .card{
     background: var(--blue);
@@ -222,9 +222,139 @@ section{
 }
 .pseudo-card{
     margin: .75em 0 2em;
+}
+.pseudo-card p{
     text-align: left;
 }
 .work-with-us .title{
     padding: 1em;
+}
+/* !!!!!!!!!!!!!
+----MEDIA QUERIES----
+!!!!!!!!!!!!!! */
+
+
+@media (min-width: 750px){
+    .logo{
+        width: 9em;
+    }
+    header{
+        padding: 1em 1.5em;
+        border: salmon 2px solid;
+    }
+    .home-text-container{
+        padding: 7em 5em;
+    }
+    .home .title{
+        font-size: 2.5rem;
+    }
+    .home-desc{
+        font-size: 1.5rem;
+    }
+    .home-btn a{
+        font-size: 1.25rem;
+    }
+    .about,
+    .potential, 
+    .hotspot,
+    .work-with-us{
+        margin: 0;
+        padding: 1.75em 4em;
+    }
+    .wwu-btn, 
+    input, 
+    textarea{
+        width: 550px;
+        padding: .75em 1em;
+    }
+
+}
+
+@media (min-width: 1250px){
+    header,
+    .nav-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-list{
+        padding-top: 1.5em;
+    }
+    .nav-btn-container{
+        display: none;
+    }
+    .nav{
+        display: initial;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .subtitle{
+        font-size: 1.5rem;
+    }
+    .home{
+        display: flex;
+        background: white;
+        padding: 5em 0 2em;
+        width: 100%;
+    }
+    .home p{
+        width: 100%;
+    }
+    .home-text-container{
+        background: var(--blue);
+        padding: 7em 18em 8em 6em ;
+    }
+    .home-img-container{
+        background: white;
+        margin: 0;
+    }
+    .home-img{
+        width: 450px;
+        display: initial;
+        margin: 10em 6em 0em -12em;
+    }
+    .about-container{
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    .services-card-container{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .card{
+        background: var(--almost-white);
+        width: 30%;
+    }
+    .card p{
+        color: var(--dark-gray);
+    }
+    .card:hover, 
+    .card:hover p{
+        /* cursor: pointer; */
+        background: var(--blue);
+        color: white;
+    }
+    .pseudo-card-container{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .pseudo-card{
+        width: 80%;
+        margin: 2em auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pseudo-card p{
+        width: 55%;
+        padding: 3em 0 0;
+    }
+    .flip-card{
+        order:-1;
+        text-align: start;
+    }
+
 }
 
