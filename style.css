@@ -208,15 +208,17 @@ section{
 .about .underline{
     padding-bottom: 1.5em;
 }
-.about::after{
+/* .about::after{
     content: '';
     position: absolute;
     border-bottom: 2px solid var(--blue);
     left: 25%;
     width:50%;
     height: 1px;
-}
+} */
 .services{
+    display: grid;
+    place-items: center;
     padding-top: .75em;
 }
 .card{
@@ -260,6 +262,10 @@ section{
 .work-with-us .title{
     padding: .75em 1em 1em;
 }
+
+.contact-form input,textarea,button{
+    width: 100%;
+}
 /* !!!!!!!!!!!!!
 ----MEDIA QUERIES----
 !!!!!!!!!!!!!! */
@@ -289,6 +295,8 @@ section{
     .potential, 
     .hotspot,
     .work-with-us{
+        display: grid;
+        place-items: center;
         margin: 0;
         padding: 1.75em 4em;
     }
@@ -318,7 +326,7 @@ section{
 @media (min-width: 1250px){
     .body{
         width: 100%;
-        max-width: 1600px;
+        /* max-width: 1600px; */
         margin: 0 auto;
     }
     .logo{
@@ -400,7 +408,7 @@ section{
         margin: 0 auto;
     }
     .services-card-container{
-        width: 90%;
+        /* width: 90%; */
         margin: .5em auto 2em;
         display: flex;
         padding: 1em;
