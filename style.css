@@ -263,7 +263,7 @@ section{
     padding-bottom: 5em;
 }
 .work-with-us .title{
-    padding: .75em 1em 1em;
+    /* padding: .75em 1em 1em; */
 }
 
 .contact-form input,textarea,button{
@@ -301,7 +301,7 @@ section{
     }
     .home-btn a,
     .wwu-btn{
-        font-size: 20px;
+        font-size: 16px;
     }
     .about,
     .potential, 
