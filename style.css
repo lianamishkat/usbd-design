@@ -62,6 +62,9 @@ body{
     list-style: none;
     padding: 0;
 }
+.nav-list li {
+    margin: 1em 0;
+}
 
 /* BUTTONS AND LINKS AND INPUTS */
 button:hover{
@@ -260,11 +263,20 @@ section{
     padding-bottom: 5em;
 }
 .work-with-us .title{
-    padding: .75em 1em 1em;
+    /* padding: .75em 1em 1em; */
 }
 
 .contact-form input,textarea,button{
     width: 100%;
+}
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+.home-section {
+    margin-top: 3.5em;
 }
 /* !!!!!!!!!!!!!
 ----MEDIA QUERIES----
@@ -279,7 +291,7 @@ section{
         padding: 1em 1.5em .75em;
     }
     .home-text-container{
-        padding: 7em 5em;
+        /* padding: 7em 5em; */
     }
     .home .title{
         font-size: 2.5rem;
@@ -289,7 +301,7 @@ section{
     }
     .home-btn a,
     .wwu-btn{
-        font-size: 20px;
+        font-size: 16px;
     }
     .about,
     .potential, 
@@ -317,6 +329,9 @@ section{
         padding: .75em 1em;
     }
 
+    .home-section {
+        margin-top: 3.5em;
+    }
 }
 /* !!!!!!!!!!!!!!
 -----DESKTOP-----
@@ -337,7 +352,7 @@ section{
     }
     .header{
         width: 100%;
-        max-width: 1600px;
+        max-width: 1400px;
         margin: 0 auto;
         
         height: 110px;
@@ -349,7 +364,7 @@ section{
         align-items: center;
     }
     li a {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     .nav-btn-container{
         display: none;
@@ -375,7 +390,8 @@ section{
         display: flex;
         justify-content: center;
         align-items: center;
-        background: white;
+        height: 100vh;
+        background: var(--blue);
         padding: 0;
         
     }
@@ -387,21 +403,23 @@ section{
         
     }
     .home-text-container{
-        height: 100vh;
-        width: 80%;
-        background: var(--blue);
+        /* height: 100vh; */
+        width: 50%;
+        /* background: var(--blue); */
         margin: 0;
-        padding: 6em 15em 6em 6em ;
+        /* padding: 6em 15em 6em 6em ; */
     }
     .home-img-container{
-        width: 20%;
-        background: white;
+        width: 50%;
+        /* background: white; */
         margin: 0;
+        display: grid;
+        place-items: center;
     }
     .home-img{
         width: 450px;
         display: initial;
-        margin: -4em 0 0 -13em;
+        /* margin: -4em 0 0 -13em; */
     }
     .about-container{
         width: 70%;
